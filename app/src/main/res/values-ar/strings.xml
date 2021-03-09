@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidDevChallenge</string>
+    <string name="stop">ايقاف</string>
+    <string name="start">إبدا</string>
+</resources>

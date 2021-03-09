@@ -17,9 +17,22 @@ package com.example.androiddevchallenge.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Typography
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
+import com.example.androiddevchallenge.R
+
+val stick = FontFamily(
+    Font(R.font.stick_regular),
+    Font(R.font.stick_regular, FontWeight.W500),
+    Font(R.font.stick_regular, FontWeight.Bold)
+)
 
 private val DarkColorPalette = darkColors(
     primary = purple200,
@@ -31,16 +44,22 @@ private val LightColorPalette = lightColors(
     primary = purple500,
     primaryVariant = purple700,
     secondary = teal200
-
-        /* Other default colors to override
-    background = Color.White,
-    surface = Color.White,
-    onPrimary = Color.White,
-    onSecondary = Color.Black,
-    onBackground = Color.Black,
-    onSurface = Color.Black,
-    */
 )
+
+val MyTypography = Typography(
+
+    body1 = TextStyle(
+        fontFamily = stick,
+        fontWeight = FontWeight.W600,
+        fontSize = 35.sp
+    ) ,
+    body2 = TextStyle(
+        fontFamily = stick,
+        fontWeight = FontWeight.W600,
+        fontSize = 25.sp
+    )
+)
+
 
 @Composable
 fun MyTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() () -> Unit) {
@@ -52,7 +71,7 @@ fun MyTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() (
 
     MaterialTheme(
         colors = colors,
-        typography = typography,
+        typography = MyTypography,
         shapes = shapes,
         content = content
     )
