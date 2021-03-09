@@ -7,7 +7,7 @@ This project is a countdown timer designed by jitpack compose for #AndroidDevCha
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
 <!--- What are you especially proud of? -->
-Jitpack compose api offered various ways of build ui that run seamlessly on device and I am proud of how the community is pushing toward it more and more.
+Jetpack compose offered various ways of build ui that run seamlessly on device and I am proud of how the community is pushing toward it more and more.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
